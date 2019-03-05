@@ -1,0 +1,17 @@
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\bin\Debug\WpfAutoOlio.exe.config
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\bin\Debug\WpfAutoOlio.exe
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\bin\Debug\WpfAutoOlio.pdb
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\MainWindow.g.cs
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\App.g.cs
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio_MarkupCompile.cache
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio_MarkupCompile.lref
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\MainWindow.baml
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.g.resources
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.Properties.Resources.resources
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.csproj.GenerateResource.cache
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.csproj.CoreCompileInputs.cache
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.exe
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.pdb
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.csprojAssemblyReference.cache
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\bin\Debug\CircularGauge.dll
+C:\Users\Ari Leskinen\source\repos\WpfAutoOlio\WpfAutoOlio\obj\Debug\WpfAutoOlio.csproj.CopyComplete

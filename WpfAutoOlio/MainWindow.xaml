@@ -1,0 +1,63 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAutoOlio"
+        xmlns:CircularGauge="clr-namespace:CircularGauge;assembly=CircularGauge" x:Class="WpfAutoOlio.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="870" Width="599">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,-8,0" Width="599">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="300*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnNaytaAutonTiedot" Content="Näytä auton tiedot" Margin="145,209,0,0" Width="120" Height="43" HorizontalContentAlignment="Center" Click="BtnNaytaAutonTiedot_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnNaytaAutonTiedot2" Content="Näytä auton 2 tiedot" HorizontalAlignment="Left" Margin="146,209,0,0" Width="120" Height="44" VerticalAlignment="Top" HorizontalContentAlignment="Center" Click="BtnNaytaAutonTiedot2_Click" Grid.Column="1"/>
+        <Button x:Name="btnStart" Content="Käynnistä" HorizontalAlignment="Left" Height="30" Margin="21,312,0,-20" VerticalAlignment="Top" Width="88" Click="BtnStart_Click"/>
+        <Button x:Name="btnStop" Content="Sammuta" HorizontalAlignment="Left" Height="30" Margin="176,312,0,-20" VerticalAlignment="Top" Width="89" Click="BtnStop_Click"/>
+        <Button x:Name="btnStart2" Content="Käynnistä" HorizontalAlignment="Left" Height="30" Margin="22,312,0,-20" VerticalAlignment="Top" Width="88" Click="BtnStart_Click" Grid.Column="1"/>
+        <Button x:Name="btnStop2" Content="Sammuta" HorizontalAlignment="Left" Height="30" Margin="177,312,0,-20" VerticalAlignment="Top" Width="89" Click="BtnStop_Click" Grid.Column="1"/>
+        <Button x:Name="btnIndicator" Content="" HorizontalAlignment="Left" Height="30" Margin="114,312,0,-20" VerticalAlignment="Top" Width="57"/>
+        <Button x:Name="btnIndicator2" Content="" HorizontalAlignment="Left" Height="30" Margin="115,312,0,-20" VerticalAlignment="Top" Width="57" Grid.Column="1"/>
+        <TextBox x:Name="txtMalli" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="145,82,0,0"/>
+        <TextBox x:Name="txtVari" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="20,132,0,0"/>
+        <TextBox x:Name="txtHuippunopeus" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="145,181,0,0" Text="0"/>
+        <TextBox x:Name="txtMalli2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="146,82,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtVari2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="21,132,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtHuippunopeus2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="146,181,0,0" Text="0" RenderTransformOrigin="1.267,0.783" Grid.Column="1"/>
+        <Label x:Name="lblMalli" Content="Malli" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="145,56,0,0"/>
+        <Label x:Name="lblMalli2" Content="Malli" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,56,0,0" Grid.Column="1"/>
+        <Label x:Name="lblVari" Content="Väri" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,106,0,0"/>
+        <Label x:Name="lblVari2" Content="Väri" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,106,0,0" Grid.Column="1"/>
+        <Label x:Name="lblHuippunopeus" Content="Huippunopeus" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="145,155,0,0" Width="120"/>
+        <Label x:Name="lblHuippunopeus2" Content="Huippunopeus" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,155,0,0" Width="120" Grid.Column="1"/>
+        <Label x:Name="lblAuto1" Content="AUTO 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,28,0,0" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="-1.094,0.423"/>
+        <Label x:Name="lblAuto2" Content="AUTO 2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,28,0,0" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="2.132,0.423" Grid.Column="1"/>
+        <Label x:Name="lblMerkki" Content="Merkki" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,56,0,0"/>
+        <Label x:Name="lblMerkki_Copy" Content="Merkki" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,56,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtMerkki" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="20,82,0,0"/>
+        <TextBox x:Name="txtMerkki2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="21,82,0,0" Grid.Column="1" UseLayoutRounding="False"/>
+        <Label x:Name="lblVaihteisto" Content="Vaihteisto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="145,107,0,0"/>
+        <Label x:Name="lblVaihteisto2" Content="Vaihteisto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,106,0,0" Grid.Column="1"/>
+        <ComboBox x:Name="cbVaihteisto" HorizontalAlignment="Left" Margin="145,133,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbVaihteisto2" HorizontalAlignment="Left" Margin="146,132,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="lblHevosvoimat" Content="Hevosvoimat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,155,0,0"/>
+        <Label x:Name="lblHevosvoimat_Copy" Content="Hevosvoimat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,155,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtHevosvoimat" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="20,181,0,0" RenderTransformOrigin="0.483,-0.087"/>
+        <TextBox x:Name="txtHevosvoimat2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="21,181,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtNopeus" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Margin="75,257,0,0" RenderTransformOrigin="0.483,-0.087" Text="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="Red" Foreground="White"/>
+        <Button x:Name="btnKiihdyta" Content="Kiihdytä" HorizontalAlignment="Left" Height="49" Margin="20,258,0,0" VerticalAlignment="Top" Width="50" Click="BtnKiihdyta_Click"/>
+        <Button x:Name="btnJarruta" Content="Jarruta" HorizontalAlignment="Left" Height="49" Margin="215,258,0,0" VerticalAlignment="Top" Width="50" Click="BtnJarruta_Click"/>
+        <Button x:Name="btnKiihdyta2" Content="Kiihdytä" HorizontalAlignment="Left" Height="49" Margin="21,258,0,0" VerticalAlignment="Top" Width="50" Click="BtnKiihdyta2_Click" Grid.Column="1"/>
+        <Button x:Name="btnJarruta2" Content="Jarruta" HorizontalAlignment="Left" Height="49" Margin="216,258,0,0" VerticalAlignment="Top" Width="50" Click="BtnJarruta2_Click" Grid.Column="1"/>
+        <TextBox x:Name="txtNopeus2" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Margin="76,257,0,0" RenderTransformOrigin="0.483,-0.087" Text="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="20" Background="Red" Foreground="White" Grid.Column="1"/>
+        <Label x:Name="lblVaihteidenMaara" Content="Vaihteet lkm" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,204,0,0"/>
+        <TextBox x:Name="txtVaihteidenMaara" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="20,230,0,0" RenderTransformOrigin="0.483,-0.087"/>
+        <Label x:Name="lblVaihteidenMaara2" Content="Vaihteet lkm" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,204,0,0" Grid.Column="1"/>
+        <TextBox x:Name="txtVaihteidenMaara2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="21,230,0,0" RenderTransformOrigin="0.483,-0.087" Grid.Column="1"/>
+        <Button x:Name="btnTyhjennys" Content="Tyhjennä" HorizontalAlignment="Left" Margin="190,31,0,0" VerticalAlignment="Top" Width="75" Click="BtnTyhjennys_Click"/>
+        <Button x:Name="btnTyhjenny2" Content="Tyhjennä" HorizontalAlignment="Left" Margin="191,31,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+        <CircularGauge:CircularGaugeControl x:Name="NopeusMittari" HorizontalAlignment="Left" Height="309" VerticalAlignment="Top" Width="306" Margin="145,367,0,-354" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
